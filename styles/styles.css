@@ -18,16 +18,24 @@
 .beguni{
     color: #5D58EF;
 }
+button a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+
 
 /* nav styles */
 .navbar{
     display: flex;
-    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* align-items: center; */
     justify-content: space-between;
     /* max-width: 1440px; */
     /* border: 1px solid gray; */
-    /* padding: 20px 140px; */
-    margin: 20px 140px;
+    padding: 20px;
+    /* margin: 20px 140px; */
 
 }
 .logo {
@@ -69,9 +77,130 @@ nav li a{
     border: none;
     
 }
-button a{
-    color: #FFFFFF;
-    text-decoration: none;
+
+
+/* banner styles */
+.banner{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    /* margin: 20px 140px; */
+}
+.banner-title{
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+.banner-description{
+    font-size: 1.25rem;
+}
+.btn-banner{
+    background-color: black;
+    font-size: 1.25rem;
+    padding: 10px 60px;
+    border-radius: 12px;
+    border: none;
+}
+.banner img{
+    width: 100%;
+}
+
+/* standard styles */
+.curriculum{
+    background-image: url("../assets/bg.png");
+    max-width: 1200px;
+    margin: 0 auto;
+    
+    
+    
+}
+.curriculum-title{
+    
+    max-width: 450px;
+    margin: 0 auto;
+    font-size: 2.3rem;
+    font-weight: bold;
+    margin-top: 60px;
+    margin-bottom: 80px;
+}
+.standard-container{
+    display: flex;
+    gap: 25px;
+    
+}
+.standard{
+    
+    padding: 52px 30px;
+    border-radius: 19px;
+    box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    text-align: center;
+
+}
+.one{
+    background-color:  #DEF5FF ;
+}
+.two{
+    background-color: #FFF4DC;
+}
+.three{
+    background-color: #F2E8FF;
+}
+.standard-title{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.standard-description{
+    font-size: 0.9rem;
+    color: #808080;
+}
+.btn-standard{
+    
+    border: none;
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 4px 4px;
+    margin-top: 33px;
+    margin-bottom: 50px;
+}
+.first-btn{
+    color: #64C8FF;
+}
+.second-btn{
+    color: #F0AA00;
+}
+.third-btn{
+    color: #8700FF;
+}
+
+.circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    max-width: 130px;
+    margin: 0 auto;
+    height: 60px;
+    margin-top: 80px;
+    margin-bottom: 60px;
+}
+.circle-btn{
+    width: 50px;
+    height: 50px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 50%;
+    background-color: #FEA301;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -82,8 +211,11 @@ button a{
 
 @media screen and (max-width: 576px) {
     .navbar{
-        margin: 12px 16px;
-        flex-direction: row;
+        max-width: 357px;
+        margin: 0 auto;
+        justify-content: space-between;
+        /* margin: 12px 16px;
+        flex-direction: row; */
         /* justify-content: space-between; */
         
     }
@@ -100,5 +232,56 @@ button a{
         display: block;
          margin-left: 200px;
     }
+
+    /* banner responsive */
+    .banner{
+
+        /* flex-direction: column; */
+        flex-wrap: wrap-reverse;
+        align-items: center;
+        max-width: 357px;
+        margin: 0 auto;
+    }
+    .btn-banner{
+        margin-left: 100px;
+        margin-right: 100px;
+        padding: 6px 24px;
+    }
+    
+     .banner-title{ 
+        font-size: 2rem;
+        text-align: center;
+    }
+    .banner-description{
+        font-size: 0.8rem;
+        text-align: center;
+    }
+    .btn-banner{
+        font-size: 0.9rem;
+
+    }
+    .banner img{
+        width: 90%;
+    } 
+
+    /* standard styles */
+    .curriculum{
+        max-width: 357px;
+        margin: 0 auto;
+    }
+    .curriculum-title{
+        font-size: 1.6rem;
+        font-weight: bold;
+        display: flex;
+        justify-content: center;
+     }
+     .standard-container{
+        flex-direction: column;
+       gap: 12px;
+       justify-content: center;
+     }
+     .circle{
+        display: none;
+     }
     
 }
